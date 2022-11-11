@@ -169,7 +169,7 @@ namespace singly_linked_list
                                 break;
                             case '4':
                                 {
-                                    if (obj.listEmpty() == true )
+                                    if (obj.listEmpty() == true)
                                     {
                                         Console.WriteLine("\nlist is empty");
                                         break;
@@ -197,6 +197,10 @@ namespace singly_linked_list
                                     break;
                                 }
                         }
+                    }
+                    catch (Exception)
+                    {
+                        Console.WriteLine("\nCheck for the value enterd ");
                     }
                     
                 }
