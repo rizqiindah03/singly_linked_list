@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Runtime.Remoting.Channels;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace singly_linked_list
 {
@@ -11,7 +14,7 @@ namespace singly_linked_list
     {
         public int rollNumber;
         public string name;
-        public node next;      
+        public node next;
     }
     class list
     {
@@ -65,9 +68,24 @@ namespace singly_linked_list
             previous.next = newnode;
 
         }
+        public void traverse()
+        {
+            if (listEmpty())
+                Console.WriteLine("\nlist is empt.\n");
+            else
+            {
+                Console.WriteLine("\nThe records in teh list are: ");
+                node currentnode;
+                for (currentnode = START; currentnode != null;
+                    currentnode = currentnode.next)
 
+                    Console.Write(currentnode.rollNumber + "" + currentnode.name + "\n");
 
+                Console.WriteLine();
 
+            }
+        }
+       
     }
 }
 
