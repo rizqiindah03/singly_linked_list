@@ -118,6 +118,38 @@ namespace singly_linked_list
             else
                 return false;
         }
+        class Program
+        {
+            // check wheter the specified node is present in the list or not 
+
+            static void Main(string[] args)
+            {
+                list obj = new list();
+                while (true)
+                {
+                    try
+                    {
+                        Console.WriteLine("\nMENU");
+                        Console.WriteLine("1. Add a record to the list ");
+                        Console.WriteLine("2. Delete a record form the list");
+                        Console.WriteLine("3. View all the records in the list ");
+                        Console.WriteLine("4. Search for a records in the list ");
+                        Console.WriteLine("5. EXIT ");
+                        Console.Write("\nEnter your choice ( 1- 5) : ");
+                        char ch = Convert.ToChar(Console.ReadLine());
+                        switch (ch)
+                        {
+                            case '1':
+                                {
+                                    obj.addNote();
+                                }
+                                break;
+                        }
+                    }
+                    
+                }
+            }
+        }
 
 
 
