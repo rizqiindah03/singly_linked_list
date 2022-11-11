@@ -13,6 +13,6 @@ namespace singly_linked_list
         public string name;
         public node next;      
     }
-   
+    
     }
 }
